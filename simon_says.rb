@@ -20,11 +20,5 @@ def start_of_word(word, number)
 end
 
 def first_word(phrase)
-  array = phrase.chars
-  array.each_with_index do |character, i|
-    if character == " "
-      first = array.shift(i)
-      return first.join
-    end
-  end
+  phrase.split[0]
 end
